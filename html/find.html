@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/png" href="../assets/favicon.png">
+        <title>Pethouse — search for pets</title>
+        <meta name="desription" content="All-In-One pet Portal. It contains information about Animal Shelters all accross the world. Search for cats, dogs and other available pets in your locals.">
+        <meta name="keywords" content="Pets, Animals, Adoption, Shelter, Donation, Volunteer, Charity, Organization, Rescue">
+        <meta property="og:title" content="Pethouse — search for pets">
+        <meta name="twitter:title" content="Pethouse — search for pets">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div id="nav">
+                    <a class="navb" href="faq.html">FAQ</a>
+                </div>
+                <a class="logo" href="index.html">
+                    <img src="../assets/logo.png" alt="logo" loading="lazy">
+                </a>
+                <div id="preferences">
+                    <button class="imgb" id="toggle-themeb" onclick="toggle_theme()">
+                        <img src="../assets/toggle-theme.svg" alt="toggle theme" loading="lazy">
+                    </button>
+                    <button class="imgb" id="toggle-languageb" onclick="toggle_language()">UA</button>
+                </div>
+            </header>
+            <div id="main">
+                <div id="search">
+                    <div class="text title">Find your new best friend</div>
+                    <div class="searchbar">
+                        <div class="tt-wrapper">
+                            <input class="entry" id="cc" type="text" placeholder="US">
+                            <div class="tt">Country Code</div>
+                        </div>
+                        <div class="tt-wrapper">
+                            <input class="entry" id="city" type="text" placeholder="New York">
+                            <div class="tt">Your City</div>
+                        </div>
+                        <div class="tt-wrapper">
+                            <input class="entry" id="pet" type="text" placeholder="Dog">
+                            <div class="tt">Specie</div>
+                        </div>
+                        <div class="tt-wrapper">
+                            <input class="entry" id="age" type="number" placeholder="5">
+                            <div class="tt">Pet Age</div>
+                        </div>
+                        <div class="tt-wrapper">
+                            <input class="entry" id="breed" type="text" placeholder="Rottweiler">
+                            <div class="tt">Pet Breed</div>
+                        </div>
+                        <div class="tt-wrapper">
+                            <input class="entry" id="sex" type="text" placeholder="Male">
+                            <div class="tt">Pet Sex</div>
+                        </div>
+                        <button class="imgb" id="searchb" onclick="search()">
+                            <img src="../assets/search.svg" alt="search" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div id="search-result">
+                    <table class="pet-table">
+                        <tr>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 y.o.</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="pet-card">
+                                    <div class="text common">Example</div>
+                                    <img class="pet-image" src="../assets/logo.png" loading="lazy">
+                                    <ul class="list">
+                                        <li class="text caption">UA</li>
+                                        <li class="text caption">Kyiv</li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="text caption">Cacadu</li>
+                                        <li class="text caption">42 yo</li>
+                                        <li class="text caption">Female</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer id="footer">
+                <div id="policy">
+                    <div class="text caption">Contacts: pethouse@shelter.mail</div>
+                    <div class="text caption">Copyright (c) pethouse.com, 2025. All rights reserved.</div>
+                </div>
+                <div id="social-media">
+                    <a class="imgb socialb" href="facebook.com/">
+                        <img src="../assets/facebook.svg" alt="facebook" loading="lazy">
+                    </a>
+                    <a class="imgb socialb" href="instagram.com/">
+                        <img src="../assets/instagram.svg" alt="instagram" loading="lazy">
+                    </a>
+                    <a class="imgb socialb" href="youtube.com/">
+                        <img src="../assets/youtube.svg" alt="youtube" loading="lazy">
+                    </a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>
